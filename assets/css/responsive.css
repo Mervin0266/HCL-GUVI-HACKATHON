@@ -1,0 +1,248 @@
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .header {
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .interview-placeholder {
+    padding: 2rem 1rem;
+  }
+
+  .placeholder-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .interview-screen.interview-active {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .interview-screen.interview-active .config-panel {
+    order: 1;
+    position: static;
+  }
+
+  .interview-screen.interview-active .main-panel {
+    order: 2;
+  }
+
+  .interview-screen.interview-active .feedback-panel {
+    order: 3;
+    position: static;
+  }
+
+  #feedbackContent .feedback-main,
+  #feedbackContent .feedback-suggestions {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+    align-items: stretch !important;
+  }
+
+  #feedbackContent .feedback-content {
+    padding: 1rem !important;
+  }
+
+  #feedbackContent .score-display {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 0.75rem !important;
+  }
+
+  #feedbackContent .score-circle {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  #feedbackContent .score-inner {
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 1.25rem !important;
+  }
+
+  /* Modern Components Responsive */
+  .modern-action-buttons {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+  }
+
+  .modern-btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .answer-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.5rem !important;
+  }
+
+  .answer-stats {
+    align-self: flex-end !important;
+  }
+
+  .question-header-content {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.75rem !important;
+  }
+
+  .question-info {
+    width: 100% !important;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0.5rem;
+  }
+
+  .header {
+    padding: 0.75rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .card {
+    border-radius: 0.75rem;
+    padding: 1rem;
+  }
+
+  .btn {
+    padding: 0.875rem 1.25rem;
+    font-size: 1rem;
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    padding: 0.875rem;
+    font-size: 1rem;
+  }
+
+  .score-number {
+    font-size: 2.5rem;
+  }
+
+  .question-text {
+    font-size: 1rem;
+  }
+
+  /* Stack buttons vertically on mobile */
+  .action-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .container {
+    padding: 0.25rem;
+  }
+
+  .card {
+    border-radius: 0.5rem;
+    margin: 0.25rem 0;
+  }
+
+  .header {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .score-number {
+    font-size: 2rem;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .logo-icon {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .header,
+  .theme-toggle,
+  .btn,
+  .loading-overlay {
+    display: none !important;
+  }
+
+  .container {
+    padding: 0;
+    max-width: none;
+  }
+
+  .card {
+    border: 1px solid #ddd;
+    box-shadow: none;
+    break-inside: avoid;
+    margin-bottom: 1rem;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .progress-fill::after {
+    animation: none;
+  }
+
+  .spinner {
+    animation: none;
+    border: 3px solid #ccc;
+  }
+}
+
+/* Focus Styles for Accessibility */
+@media (prefers-reduced-motion: no-preference) {
+  .btn:focus,
+  .form-input:focus,
+  .form-select:focus,
+  .form-textarea:focus,
+  .theme-toggle:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
