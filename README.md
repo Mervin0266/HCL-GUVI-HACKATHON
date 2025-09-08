@@ -1,4 +1,4 @@
-````markdown
+
 # 🤖 AI Interview Coach: Master Your Next Interview with AI
 
 **Mission UpSkill India Hackathon Submission**
@@ -88,7 +88,7 @@ Follow these steps to set up and run the AI Interview Coach locally:
 ```bash
 git clone [YOUR_GITHUB_REPO_URL]
 cd ai-interview-coach
-````
+```
 
 ### 2\. Create a Virtual Environment (Recommended)
 
@@ -187,4 +187,5 @@ Your web browser will automatically open to `http://localhost:8501/`.
 
 ```
 ```# HCL-GUVI-HACKATHON
+# HCL-GUVI-HACKATHON
 # HCL-GUVI-HACKATHON
